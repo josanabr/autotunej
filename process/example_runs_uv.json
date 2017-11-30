@@ -1,0 +1,19 @@
+[
+    { 
+        "executable": "../ex/bin/ex1",
+        "ems": "../ex/ems",
+        "folder": "../../runs/{-d}/{-p}/{-t_delete}",
+        "filename": "out_raw",
+        "queue": "ashley",
+        "wallhours": "200",
+        "options": {
+            "-d": "2",
+            "-p": [
+                "0.0001"
+            ],
+            "-t_delete": "100",
+            "-boot": "1",
+            "-ems": "./ems/"
+        }
+    }
+]
