@@ -54,7 +54,7 @@ all: dirs $(BINS)
 
 # Build a specific binary 
 bin/%: obj/src/%.c.o $(LIBAUTOTUNE)/lib/libautotune.a 
-	$(CXX) -o $@ $^ $(BOBJS) $(LDFLAGS)
+	$(CXX) -o $@ $^ $(BOBJS) $(CXXFLAGS) $(LDFLAGS)
 
 # Make a c object file
 obj/%.c.o: %.c
